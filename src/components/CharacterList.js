@@ -3,7 +3,7 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 // import SearchBar from "./SearchForm";
 
-export default function CharacterList() {
+const CharacterList= () => {
   // TODO: Add useState to track data from useEffect
   const [state, setState] = useState([]);
 
@@ -28,9 +28,9 @@ export default function CharacterList() {
           return (
             // <SearchBar searchBoxName={"userNameSearch"} onSearchTermChange={this.onSearch} />
             <CharacterCard 
-              key={data.id}
-              id={data.id}
-              name={data.name}
+              // key={data.id}
+              // id={data.id}
+              character={data.name}
               status={data.status}
               species={data.species}
               gender={data.gender}
@@ -40,3 +40,5 @@ export default function CharacterList() {
     </section>
   );
 }
+
+export default CharacterList;
