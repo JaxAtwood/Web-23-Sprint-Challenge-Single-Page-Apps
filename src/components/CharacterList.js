@@ -28,9 +28,9 @@ const CharacterList= () => {
           return (
             // <SearchBar searchBoxName={"userNameSearch"} onSearchTermChange={this.onSearch} />
             <CharacterCard 
-              // key={data.id}
-              // id={data.id}
-              character={data.name}
+              key={data.id}
+              id={data.id}
+              name={data.name}
               status={data.status}
               species={data.species}
               gender={data.gender}
