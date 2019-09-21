@@ -29,7 +29,6 @@ const Search = (props) => {
   return (
     
     <form className="search">
-      
       <input
         value={searchValue}
         onChange={handleSearchInputChanges}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
-// import SearchBar from "./SearchForm";
+
 
 const CharacterList= () => {
   // TODO: Add useState to track data from useEffect
@@ -26,7 +26,6 @@ const CharacterList= () => {
     <section className="character-list">
       {state.map(data => {
           return (
-            // <SearchBar searchBoxName={"userNameSearch"} onSearchTermChange={this.onSearch} />
             <CharacterCard 
               key={data.id}
               id={data.id}

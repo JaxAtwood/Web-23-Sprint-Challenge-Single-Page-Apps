@@ -2,16 +2,20 @@ import React from "react";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import WelcomePage from "./components/WelcomePage";
+import LocationsList from "./components/LocationsList";
 import { Route } from "react-router-dom";
-// import SearchForm from "./components/SearchForm.js";
+// import styled from "styled-components";
+import { Body } from "./components/Styles";
 
 function App() {
   return (
     <main>
       <Header />
-      <Route exact path="/" component={WelcomePage} />
+      <Route exact path="/" component={WelcomePage} />   
+      <Body>
       <Route path="/characters" component={CharacterList} />
-      {/* <SearchForm /> */}
+      </Body>
+      <Route path="/locations" component={LocationsList} />
     </main>
   );
 }
