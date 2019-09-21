@@ -29,7 +29,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: I was quite confused on this for a while but Levi (my TL) helped me to break it down. CSR if when the whole website loads at once. It takes longer in the beginning but allows for faster and smoother page transitions. Conversely, SSR only loads what it needs. So if a site is huge like Amazon for example, it would take forever to load the whole website so I imagine they probably use something closer to CSR.
 
 ## Project Set Up
 
